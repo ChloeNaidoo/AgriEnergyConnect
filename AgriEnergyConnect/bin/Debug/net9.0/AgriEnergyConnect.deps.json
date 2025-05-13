@@ -10,6 +10,10 @@
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.4",
           "Microsoft.EntityFrameworkCore": "9.0.4",
+<<<<<<< HEAD
+=======
+          "Microsoft.EntityFrameworkCore.Design": "9.0.4",
+>>>>>>> 006fc78 (css)
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.4"
         },

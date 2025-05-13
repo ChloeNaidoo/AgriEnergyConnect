@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "ExJptsnNrPg=",
   "success": true,
   "projectFilePath": "C:\\Users\\lab_services_student\\source\\repos\\AgriEnergyConnect\\AgriEnergyConnect\\AgriEnergyConnect.csproj",
+=======
+  "dgSpecHash": "zDVZMMW/CWw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lab_services_student\\source\\repos\\AgriEnergyConnect4\\AgriEnergyConnect\\AgriEnergyConnect.csproj",
+>>>>>>> 006fc78 (css)
   "expectedPackageFiles": [
     "C:\\Users\\lab_services_student\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\lab_services_student\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

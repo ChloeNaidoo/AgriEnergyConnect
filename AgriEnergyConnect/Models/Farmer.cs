@@ -8,7 +8,11 @@ namespace AgriEnergyConnect.Models
         public int FarmerId { get; set; }
 
         [Required]
+<<<<<<< HEAD
         public string Name { get; set; }
+=======
+        public string FullName { get; set; }
+>>>>>>> 006fc78 (css)
 
         [EmailAddress]
         public string Email { get; set; }

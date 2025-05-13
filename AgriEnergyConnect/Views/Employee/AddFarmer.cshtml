@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿ @model AgriEnergyConnect.Models.Farmer
 
 @{
@@ -29,11 +30,110 @@
     </div>
     <button type="submit" class="btn btn-primary">Add Farmer</button>
 </form>
+=======
+﻿@model AgriEnergyConnect.Models.Farmer
+
+@{
+    ViewData["Title"] = "Add Farmer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .form-wrapper {
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: #f0f7f3;
+    }
+
+    .form-box {
+        background-color: #ffffff;
+        padding: 2.5rem;
+        border-radius: 16px;
+        box-shadow: 0 6px 20px rgba(0, 80, 40, 0.08);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .form-box h2 {
+        color: #2e7d32;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+        font-weight: 500;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn-agri {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .btn-agri:hover {
+        background-color: #388e3c;
+    }
+
+    .text-danger {
+        font-size: 0.9rem;
+    }
+</style>
+
+<div class="form-wrapper">
+    <div class="form-box">
+        <h2>Add New Farmer</h2>
+
+        <form asp-action="AddFarmer" method="post" novalidate>
+            <div class="mb-3">
+                <label asp-for="FullName" class="form-label"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Phone" class="form-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+
+            <div class="mb-4">
+                <label asp-for="Location" class="form-label"></label>
+                <input asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-agri">Add Farmer</button>
+        </form>
+    </div>
+</div>
+>>>>>>> 006fc78 (css)
 
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 006fc78 (css)

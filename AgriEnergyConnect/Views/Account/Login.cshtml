@@ -1,0 +1,77 @@
+﻿@model AgriEnergyConnect.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Adjust if you have a different layout
+}
+
+<style>
+    body {
+        background-color: #f5f9f6; /* light greenish white */
+    }
+
+    .login-card {
+        background-color: #ffffff;
+        border: 1px solid #e0e4dd;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 64, 32, 0.1);
+        padding: 2rem;
+        max-width: 450px;
+        margin: 5% auto;
+    }
+
+    .btn-agri {
+        background-color: #4caf50; /* green */
+        color: white;
+        border: none;
+    }
+
+    .btn-agri:hover {
+        background-color: #388e3c; /* darker green */
+    }
+
+    .form-control:focus {
+        border-color: #81c784; /* green highlight */
+        box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+    }
+
+    h2 {
+        color: #2e7d32; /* dark earthy green */
+    }
+
+    .form-check-label {
+        color: #5d6c4d; /* muted brownish green */
+    }
+</style>
+
+<div class="login-card">
+    <h2 class="text-center mb-4">Login</h2>
+    <form asp-action="Login" method="post">
+        <div class="form-group mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Password" class="form-label"></label>
+            <input asp-for="Password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-check mb-3">
+            <input asp-for="RememberMe" class="form-check-input" />
+            <label asp-for="RememberMe" class="form-check-label"></label>
+        </div>
+
+        <div class="d-grid">
+            <button type="submit" class="btn btn-agri">Sign In</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

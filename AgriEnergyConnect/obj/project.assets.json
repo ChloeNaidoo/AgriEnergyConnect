@@ -4880,6 +4880,10 @@
     "net9.0": [
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.4",
       "Microsoft.EntityFrameworkCore >= 9.0.4",
+<<<<<<< HEAD
+=======
+      "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
+>>>>>>> 006fc78 (css)
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.4"
     ]
@@ -4891,11 +4895,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\lab_services_student\\source\\repos\\AgriEnergyConnect\\AgriEnergyConnect\\AgriEnergyConnect.csproj",
       "projectName": "AgriEnergyConnect",
       "projectPath": "C:\\Users\\lab_services_student\\source\\repos\\AgriEnergyConnect\\AgriEnergyConnect\\AgriEnergyConnect.csproj",
       "packagesPath": "C:\\Users\\lab_services_student\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\lab_services_student\\source\\repos\\AgriEnergyConnect\\AgriEnergyConnect\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\lab_services_student\\source\\repos\\AgriEnergyConnect4\\AgriEnergyConnect\\AgriEnergyConnect.csproj",
+      "projectName": "AgriEnergyConnect",
+      "projectPath": "C:\\Users\\lab_services_student\\source\\repos\\AgriEnergyConnect4\\AgriEnergyConnect\\AgriEnergyConnect.csproj",
+      "packagesPath": "C:\\Users\\lab_services_student\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lab_services_student\\source\\repos\\AgriEnergyConnect4\\AgriEnergyConnect\\obj\\",
+>>>>>>> 006fc78 (css)
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4942,6 +4954,15 @@
             "target": "Package",
             "version": "[9.0.4, )"
           },
+<<<<<<< HEAD
+=======
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[9.0.4, )"
+          },
+>>>>>>> 006fc78 (css)
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[9.0.4, )"

@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Filtered Products";
+<<<<<<< HEAD
 }
 
 <h2>Filtered Products</h2>
@@ -43,3 +44,106 @@
         }
     </tbody>
 </table>
+=======
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .content-wrapper {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2rem;
+        background-color: #f0f7f3;
+    }
+
+    .card-box {
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 6px 20px rgba(0, 80, 40, 0.1);
+        width: 100%;
+        max-width: 1000px;
+    }
+
+        .card-box h2 {
+            color: #2e7d32;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+    .filter-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-control {
+        border-radius: 8px;
+    }
+
+    .btn-agri {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 0.6rem 1.5rem;
+        border-radius: 8px;
+    }
+
+        .btn-agri:hover {
+            background-color: #388e3c;
+        }
+
+    .table th, .table td {
+        vertical-align: middle;
+    }
+</style>
+
+<div class="content-wrapper">
+    <div class="card-box">
+        <h2>Filtered Products</h2>
+
+        <form asp-action="FilterProducts" method="get" class="filter-form">
+            <div class="form-group flex-fill">
+                <label for="category">Category:</label>
+                <input type="text" name="category" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="fromDate">From:</label>
+                <input type="date" name="fromDate" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="toDate">To:</label>
+                <input type="date" name="toDate" class="form-control" />
+            </div>
+            <div class="form-group align-self-end">
+                <button type="submit" class="btn btn-agri">Filter</button>
+            </div>
+        </form>
+
+        <table class="table table-striped table-bordered">
+            <thead class="table-success">
+                <tr>
+                    <th>Farmer</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Production Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.Farmer?.FullName</td>
+                        <td>@product.Name</td>
+                        <td>@product.Category</td>
+                        <td>@product.ProductionDate.ToShortDateString()</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+>>>>>>> 006fc78 (css)

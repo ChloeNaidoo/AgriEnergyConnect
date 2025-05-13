@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
    @model AgriEnergyConnect.Models.Product
 
@@ -25,11 +26,90 @@
     </div>
     <button type="submit" class="btn btn-primary">Add Product</button>
 </form>
+=======
+﻿@model AgriEnergyConnect.Models.Product
+
+@{
+    ViewData["Title"] = "Add Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .content-wrapper {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: #f0f7f3;
+    }
+
+    .form-card {
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 6px 20px rgba(0, 80, 40, 0.1);
+        width: 100%;
+        max-width: 600px;
+    }
+
+        .form-card h2 {
+            color: #2e7d32;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+    .btn-agri {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 0.6rem 1.5rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
+
+        .btn-agri:hover {
+            background-color: #388e3c;
+        }
+
+    .form-control {
+        border-radius: 8px;
+    }
+</style>
+
+<div class="content-wrapper">
+    <div class="form-card">
+        <h2>Add New Product</h2>
+
+        <form asp-action="AddProduct" method="post">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                <input asp-for="Category" class="form-control" />
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductionDate" class="control-label"></label>
+                <input asp-for="ProductionDate" class="form-control" type="date" />
+                <span asp-validation-for="ProductionDate" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-agri">Add Product</button>
+        </form>
+    </div>
+</div>
+>>>>>>> 006fc78 (css)
 
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 006fc78 (css)
